@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maple &amp; Bean Coffee Co. — Austin, TX | Slow Mornings, Serious Coffee</title>
+  <meta name="description" content="Maple & Bean Coffee Co. — a neighbourhood coffee shop on South Congress, Austin. Small-batch coffee, pastries baked at sunrise, free Wi-Fi. Open 7 days.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top strip: today's hours are filled in by script.js -->
+  <div class="topbar">
+    <p><span class="dot"></span> Open today: <strong id="today-hours">7:00 AM – 6:00 PM</strong> &nbsp;·&nbsp; 1200 South Congress Ave, Austin, TX &nbsp;·&nbsp; (512) 555-0148</p>
+  </div>
+
+  <!-- Header: logo left, links right, sticks to the top while scrolling -->
+  <header class="site-header" id="site-header">
+    <a class="logo" href="#top" aria-label="Maple and Bean home">
+      <svg class="logo-mark" viewBox="0 0 24 24" fill="none" aria-hidden="true"><ellipse cx="12" cy="12" rx="7" ry="9.5" transform="rotate(20 12 12)" stroke="currentColor" stroke-width="1.8"/><path d="M9.5 4.5c3.5 4.5 1.5 8.5 5 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <span>Maple <em>&amp;</em> Bean</span>
+    </a>
+    <button class="menu-button" id="menu-button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="main-nav" id="main-nav">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit Us</a>
+      <a class="call-button" href="tel:+15125550148">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+        Call to order
+      </a>
+    </nav>
+  </header>
+
+  <!-- HERO: the first impression — big photo, big promise, two clear buttons -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <p class="hero-badge">★ 4.9 — loved by our South Congress neighbours</p>
+      <h1>Slow mornings,<br><em>serious coffee.</em></h1>
+      <p class="hero-sub">Small-batch beans roasted in-house, pastries out of the oven at sunrise, and a sunny corner table with your name on it.</p>
+      <div class="hero-buttons">
+        <a class="button" href="#menu">See the menu</a>
+        <a class="button button-ghost" href="https://maps.google.com/?q=1200+South+Congress+Ave+Austin+TX" target="_blank" rel="noopener">Get directions</a>
+      </div>
+      <div class="hero-chips">
+        <span>Roasted in-house</span>
+        <span>Baked fresh daily</span>
+        <span>Free Wi-Fi</span>
+        <span>Dog-friendly patio</span>
+      </div>
+    </div>
+    <a class="hero-scroll" href="#menu" aria-label="Scroll to menu">↓</a>
+  </section>
+
+  <!-- Moving strip: the shop's promises, scrolling slowly -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Fresh pastries at sunrise</span><i>✦</i><span>Small-batch roasting</span><i>✦</i><span>Locally sourced milk</span><i>✦</i><span>Free Wi-Fi, always</span><i>✦</i><span>Beans to take home</span><i>✦</i>
+      <span>Fresh pastries at sunrise</span><i>✦</i><span>Small-batch roasting</span><i>✦</i><span>Locally sourced milk</span><i>✦</i><span>Free Wi-Fi, always</span><i>✦</i><span>Beans to take home</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- SIGNATURE MENU: photo cards for the four favourites -->
+  <section class="section" id="menu">
+    <p class="eyebrow">The menu</p>
+    <h2>Made fresh, <em>every single morning</em></h2>
+    <p class="section-intro">Our four most-loved orders — the ones our regulars drive across town for.</p>
+
+    <div class="menu-grid">
+      <article class="menu-card reveal">
+        <div class="menu-photo"><img src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=900&auto=format&fit=crop" alt="Maple latte with leaf latte art"><span class="tag">Bestseller</span></div>
+        <div class="menu-body">
+          <div class="menu-line"><h3>Maple Latte</h3><p class="price">$5.50</p></div>
+          <p>Double espresso, silky steamed milk and a touch of real Vermont maple syrup.</p>
+        </div>
+      </article>
+
+      <article class="menu-card reveal">
+        <div class="menu-photo"><img src="https://images.unsplash.com/photo-1517959105821-eaf2591984ca?q=80&w=900&auto=format&fit=crop" alt="Iced cold brew coffee being poured"><span class="tag">18-hour steep</span></div>
+        <div class="menu-body">
+          <div class="menu-line"><h3>Cold Brew</h3><p class="price">$4.75</p></div>
+          <p>Slow-steeped for 18 hours. Chocolate-smooth, never bitter, dangerously easy to drink.</p>
+        </div>
+      </article>
+
+      <article class="menu-card reveal">
+        <div class="menu-photo"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?q=80&w=900&auto=format&fit=crop" alt="Golden butter croissants, baked fresh"><span class="tag">Baked at sunrise</span></div>
+        <div class="menu-body">
+          <div class="menu-line"><h3>Butter Croissant</h3><p class="price">$3.95</p></div>
+          <p>27 flaky layers, baked in our own oven each morning. Gone by ten, most days.</p>
+        </div>
+      </article>
+
+      <article class="menu-card reveal">
+        <div class="menu-photo"><img src="https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?q=80&w=900&auto=format&fit=crop" alt="Avocado toast with a soft egg"><span class="tag">Weekend favourite</span></div>
+        <div class="menu-body">
+          <div class="menu-line"><h3>Avocado Toast</h3><p class="price">$8.50</p></div>
+          <p>Thick sourdough, smashed avocado, chilli flakes, lemon and a perfectly soft egg.</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- Full price list: two calm columns, like a real cafe menu board -->
+    <div class="price-list reveal">
+      <div>
+        <h3>Coffee &amp; more</h3>
+        <ul>
+          <li><span>Espresso</span><b>$3.25</b></li>
+          <li><span>Cappuccino</span><b>$4.50</b></li>
+          <li><span>Flat White</span><b>$4.75</b></li>
+          <li><span>Caffè Mocha</span><b>$5.25</b></li>
+          <li><span>Matcha Latte</span><b>$5.50</b></li>
+          <li><span>Hot Chocolate</span><b>$4.25</b></li>
+        </ul>
+      </div>
+      <div>
+        <h3>From the oven</h3>
+        <ul>
+          <li><span>Blueberry Muffin</span><b>$3.75</b></li>
+          <li><span>Banana Bread</span><b>$3.50</b></li>
+          <li><span>Cinnamon Roll</span><b>$4.25</b></li>
+          <li><span>Ham &amp; Cheese Croissant</span><b>$5.95</b></li>
+          <li><span>Granola &amp; Yogurt Bowl</span><b>$6.50</b></li>
+          <li><span>Beans to take home (12 oz)</span><b>$16.00</b></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special offer: the kind of banner a real client updates for promotions -->
+  <section class="offer reveal">
+    <div class="offer-inner">
+      <p class="offer-tag">Weekday treat</p>
+      <h2>Happy Hour, 3–5 PM — 20% off every Cold Brew</h2>
+      <p>Monday to Friday. Show this page at the counter, sip happy.</p>
+      <a class="button button-light" href="tel:+15125550148">Call to order ahead</a>
+    </div>
+  </section>
+
+  <!-- STORY: photo on one side, honest story and proof numbers on the other -->
+  <section class="section story" id="story">
+    <div class="story-photo reveal"><img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=1400&auto=format&fit=crop" alt="Inside Maple and Bean — warm wood, plants and sunlight"></div>
+    <div class="story-text reveal">
+      <p class="eyebrow">Our story</p>
+      <h2>A coffee shop that feels like a <em>neighbour's kitchen</em></h2>
+      <p>Maple &amp; Bean started in 2019 with one espresso machine, a borrowed oven and a simple idea: great coffee should never feel rushed or fancy — it should feel like home.</p>
+      <p>Six years on, we still roast every bean in small batches at the back of the shop, still bake at sunrise, and still know most of our regulars by name — and by order.</p>
+      <div class="stats">
+        <div><b>2019</b><span>Est. on South Congress</span></div>
+        <div><b>40k+</b><span>Cups poured a year</span></div>
+        <div><b>4.9★</b><span>From 800+ reviews</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery strip: three photos that sell the feeling of the place -->
+  <section class="gallery" aria-label="Photos of the shop">
+    <img class="reveal" src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?q=80&w=1400&auto=format&fit=crop" alt="Freshly roasted coffee beans">
+    <img class="reveal" src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?q=80&w=900&auto=format&fit=crop" alt="Our barista at work by the window">
+    <img class="reveal" src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?q=80&w=1920&auto=format&fit=crop" alt="A quiet table at Maple and Bean">
+  </section>
+
+  <!-- REVIEWS: trust builders, shown as cards with stars -->
+  <section class="section" id="reviews">
+    <p class="eyebrow">Reviews</p>
+    <h2>What our neighbours <em>actually say</em></h2>
+    <div class="review-grid">
+      <article class="review-card reveal">
+        <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+        <p>“The best latte on South Congress — and they had my order ready before I even reached the counter.”</p>
+        <cite>— Sarah M., regular since 2021</cite>
+      </article>
+      <article class="review-card reveal">
+        <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+        <p>“My morning office. Fast Wi-Fi, kind people, and the croissants are worth the trip across town alone.”</p>
+        <cite>— James R., Austin</cite>
+      </article>
+      <article class="review-card reveal">
+        <p class="stars" aria-label="5 out of 5 stars">★★★★★</p>
+        <p>“We ordered coffee and pastries for our whole office. On time, still warm, and everyone asked where it was from.”</p>
+        <cite>— Priya K., office manager</cite>
+      </article>
+    </div>
+  </section>
+
+  <!-- VISIT: hours (today is highlighted by script.js), address, directions -->
+  <section class="section visit" id="visit">
+    <div class="visit-card reveal">
+      <p class="eyebrow">Visit us</p>
+      <h2>Come say hello</h2>
+      <table class="hours-table" id="hours-table">
+        <tr data-days="1,2,3,4,5"><td>Monday – Friday</td><td>7:00 AM – 6:00 PM</td></tr>
+        <tr data-days="6"><td>Saturday</td><td>8:00 AM – 6:00 PM</td></tr>
+        <tr data-days="0"><td>Sunday</td><td>8:00 AM – 4:00 PM</td></tr>
+      </table>
+      <p class="today-note" id="today-note"></p>
+    </div>
+    <div class="visit-card reveal">
+      <p class="eyebrow">Find us</p>
+      <h2>1200 South Congress Ave</h2>
+      <p class="address">Austin, TX 78704<br>Free parking behind the shop · Bus 1 &amp; 300 stop 2 minutes away</p>
+      <ul class="features">
+        <li>Free Wi-Fi &amp; laptop-friendly tables</li>
+        <li>Outdoor patio — dogs welcome</li>
+        <li>Beans &amp; gift cards at the counter</li>
+        <li>Catering for offices &amp; events</li>
+      </ul>
+      <a class="button" href="https://maps.google.com/?q=1200+South+Congress+Ave+Austin+TX" target="_blank" rel="noopener">Get directions on Google Maps</a>
+    </div>
+  </section>
+
+  <!-- CONTACT: simple form, script.js shows the thank-you note -->
+  <section class="section contact" id="contact">
+    <p class="eyebrow">Contact</p>
+    <h2>Ask us anything</h2>
+    <p class="section-intro">Catering, big orders, or just saying hello — we reply within one working day.</p>
+    <form id="contact-form" class="reveal">
+      <div class="form-row">
+        <div>
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required>
+        </div>
+        <div>
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+      </div>
+      <label for="message">Your message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Hi! I would like to order..." required></textarea>
+      <button class="button" type="submit">Send message</button>
+      <p class="form-note" id="form-note" role="status"></p>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p class="footer-logo">Maple <em>&amp;</em> Bean Coffee Co.</p>
+    <p>1200 South Congress Ave, Austin, TX 78704 · (512) 555-0148 · Open 7 days a week</p>
+    <p>Follow along on Instagram <b>@mapleandbeanatx</b></p>
+    <p class="footer-small">Demo website — a fictional shop, made as a design sample.</p>
+  </footer>
+
+  <!-- Sticky call button on phones: one tap and the customer is calling -->
+  <a class="sticky-call" href="tel:+15125550148">
+    <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+    Call the shop
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
